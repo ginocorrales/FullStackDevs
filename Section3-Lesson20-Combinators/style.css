@@ -1,0 +1,59 @@
+body{ 
+    background-image: url(zebra.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.container{
+    /*background: linear-gradient(to right, #00ccff,#b3f0ff); 
+    box-shadow: 3px 5px 3px black;
+    */
+}
+
+/*Specificity - lecture 22 - will take precedence depending in which order appears (jierarchy declared in the css file). In this case, h1 will be green overwritering the white color previously assigned before  in the css file, not in the html file hierarchy
+
+Calculator
+style attribute, ID,class/pseudo class/attribute, elements 
+most specificity value  --->  least specificity value    
+
+*note: If you want to have the highest hierarchy of ALL 
+color: green !important;  this will nuke all and attach this color to ALL h1s
+
+*/
+
+.container h1{
+    color: red;   
+}
+
+div h1{
+    color: green;   
+}
+
+
+/*css grouping - help redundancy, help browser to lead faster - Lecture 21*/
+h1, h2, h3 {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px red;
+    line-height: 1rem;
+    font-family: sans-serif;
+}
+
+.borderImg{
+    border: 10px dashed black;
+}
+
+/*Descentes and Childs - Lecture 20*/
+ul li{
+    color: white;
+    font-size: 20px;
+}
+
+ul > li{
+    color: yellow;
+}
+
+
+
+
+

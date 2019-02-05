@@ -1,0 +1,127 @@
+body{ 
+    background-color: #444;
+/*    text-align: center;*/
+}
+
+
+h1{ 
+/*  All here is using Google Fonts- Sec4 - Lecture 25*/
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Lato', serif, sans-serif;
+}
+
+h2{ 
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Raleway', serif, sans-serif;
+}
+
+h3{ 
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Spirax', serif, sans-serif;
+}
+
+.formating{
+    font-size: 25px;
+    line-height: 2em;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: yellow;
+/*  letter-spacing: 10px;       */
+    word-spacing: 30px;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    padding: 5px;
+    opacity: 1;  /* value goes from 0 to 1*/
+/*    display: block; /* This is how we can center the image   //
+    
+    margin: 60px; */
+    margin: auto; 
+    display: block;
+}
+
+/*Padding and Margin*/
+.borderImg{
+/*  border: 10px dashed red;
+    border-radius: 50%;         */
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+
+button {
+    color: white;
+    background: red;
+    border-radius: 12px;
+    border: none;
+    font-size: 25px;
+    padding: 10px 20px 30px 40px; /*these values means the paddin "clock wise" top, R, botton, L...
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 3x0px;
+    padding-left: 40px;*/
+}
+
+ul li{
+    color: white;
+    font-size: 20px;
+}
+
+ul > li{
+    color: yellow;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    
+}
+
+/* Everytime that a row is created, we want to something happends after that
+*/
+.row::after{
+    display: block; /* Every row created we want to stack over */
+    clear: both; /* clear any properties on any rows - rows start fresh - rows after are created and clear the content */
+    content: "";
+}
+
+/*12 columns - divided 100% in 12 columns - */
+.col-1{width: 8.33%;} /*grid systems */
+.col-2{width: 16.66%;} /*grid systems */
+.col-3{width: 25%;} /*grid systems */
+.col-4{width: 33.33%;} /*grid systems */
+.col-5{width: 41.66%;} /*grid systems */
+.col-6{width: 50%;} /*grid systems */
+.col-7{width: 58.33%;} /*grid systems */
+.col-8{width: 66.66%;} /*grid systems */
+.col-9{width: 75%;} /*grid systems */
+.col-10{width: 83.33%;} /*grid systems */
+.col-11{width: 91.66%;} /*grid systems */
+.col-12{width: 100%;} /*grid systems */
+
+/*grabbing elements - get the padding and margin  and makes the content more realistic*/
+* {
+    box-sizing: border-box
+}
+
+/* how these columns work in the browser
+Select all classes that has a name col...
+*/
+[class*="col-"]{
+    border: 2px solid red;
+    padding: 15px;
+}
+
+

@@ -1,0 +1,60 @@
+/*
+html { Here Fonts family example - Sec4 - Lecture 24
+    font-family: "Times New Roman", serif, sans-serif;    
+}
+*/
+
+body{ 
+/*    background-image: url(zebra.jpg);*/
+/*    background-repeat: no-repeat;*/
+/*    background-size: cover; */
+    background-color: #444;
+    text-align: center;
+}
+
+
+h1{ /*All here is using Google Fonts- Sec4 - Lecture 25*/
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Lato', serif, sans-serif;
+}
+
+h2{ 
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Raleway', serif, sans-serif;
+}
+
+h3{ 
+    color: #ffffff;
+    line-height: 2rem;
+    font-family: 'Baloo+Bhaijaan';
+}
+
+.formating{
+    font-size: 25px;
+    line-height: 2em;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: yellow;
+    /*letter-spacing: 10px; */
+    word-spacing: 30px;
+    text-transform: uppercase;
+}
+
+.borderImg{
+    border: 10px dashed red;
+}
+
+ul li{
+    color: white;
+    font-size: 20px;
+}
+
+ul > li{
+    color: yellow;
+}
